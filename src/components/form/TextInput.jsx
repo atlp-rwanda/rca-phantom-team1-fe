@@ -1,9 +1,9 @@
 import  React from 'react';
 
-function TextInput({ value, onChange, className, inputRef }) {
+function TextInput({ value, type, onChange, placeholder, className, inputRef }) {
     return (
       <div>
-        <input type="text" value={value} onChange={onChange} className={className} ref={inputRef} />
+        <input type={type} value={value} placeholder={placeholder} onChange={onChange} className={` rounded px-4 w-1/2 py-3 outline-none placeholder-slate-500 ${className}`} ref={inputRef} />
       </div>
     );
   }
