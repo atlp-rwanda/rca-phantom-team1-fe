@@ -4,6 +4,7 @@ import { Routes, BrowserRouter as Router, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import { useSelector, useDispatch } from 'react-redux'
 import { increment, decrement } from './store'
+import PasswordReset from './pages/PasswordReset'
 
 function App() {
   const count = useSelector((state) => state.count)
@@ -15,14 +16,15 @@ function App() {
         <Routes>
           {/* auth routes */}
           <Route path='/' element={<Home />} />
+          <Route path='/password-reset' element={<PasswordReset />} />
         </Routes>
       </Router>
 
-      <div>
+      {/* <div>
         <h1>Counter: {count}</h1>
         <button onClick={() => dispatch(increment())}>Increment</button>
         <button onClick={() => dispatch(decrement())}>Decrement</button>
-      </div>
+      </div> */}
     </>
   )
 }
