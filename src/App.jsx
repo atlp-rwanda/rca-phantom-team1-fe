@@ -5,12 +5,14 @@ import Home from './pages/Home'
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        {/* auth routes */}
-        <Route path='/' element={<Home />} />
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          {/* auth routes */}
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </Router>
+    </>
   )
 }
 export default App

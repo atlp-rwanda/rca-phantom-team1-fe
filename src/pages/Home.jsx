@@ -1,13 +1,13 @@
-import Button from '../components/ui/Button'
+import {Navbar, Header, Services} from "../components"
 import Footer from '../components/footer/index'
 
-function Home() {
+const Home = () => {
   return (
-    <div className='Home'>
-      <h1>Welcome To Phantom</h1>
-      <div className='card'>Frontend</div>
-
-      <Footer />
+    <div className="Home">
+      <Navbar/>
+      <Header/>
+      <Services/>
+      <Footer/>
     </div>
   )
 }

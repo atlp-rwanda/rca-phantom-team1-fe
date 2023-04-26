@@ -1,0 +1,190 @@
+@use "../../assets/scss/" as *;
+
+.services {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*
+SECTION 1
+*/
+
+.services .services-section-1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 50px;
+}
+.services .services-section-1 .services-bus {
+    flex: 20%;
+    width: 20%;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+.services .services-section-1 .services-content{
+    color: $black;
+    text-align: left;
+    flex: 30%;
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 39px;
+}
+.services .services-section-1 .services-content p {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+.services .services-section-1 .services-content p span {
+    color: $main-color;
+}
+
+/*
+SECTION 2
+*/
+
+.services .services-section-2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 50px 200px;
+}
+.services .services-section-2 .service-1 {
+    width: 222px;
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    background: $white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.21);
+    border-radius: 8px;
+    height: 241px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services .services-section-2 .service-2 {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: $white;
+    background: $main-color;
+    border-radius: 8px;
+    width: 327px;
+    height: 317px;    
+}
+.services .services-section-2 .service-2 h2 {
+    margin: 10px;
+}
+.services .services-section-2 .service-2 p{
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 18px;
+    color: $white;
+    margin: 20px 10px;
+ }
+.services .services-section-2 .service-3 {
+    width: 222px;
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    background: $white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.21);
+    border-radius: 8px;
+    height: 241px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding-top: 5%;
+}
+.services .services-section-2 img {
+    margin-top: 40px;
+}
+.services .services-section-2 a {
+    color: $second-color;
+    text-decoration: none;
+}
+
+/*
+SECTION 3
+*/
+.services .services-section-3{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px 50px
+}
+.services .services-section-3 .services-content{
+    color: $black;
+    text-align: left;
+    flex: 20%;
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 39px;
+}
+.services .services-section-3 .services-content span {
+    color: $main-color;
+}
+.services .services-section-3 .services-bus {
+    flex:40%;
+    width: 40%;
+    margin-top: 50px;
+}
+
+// SCREENS
+
+@media (max-width: 1320px) {
+    .services .services-section-1 .services-content {
+        font-size: 14px;
+    }
+    .services .services-section-3 .services-content {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1200px) {
+    .services .services-section-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0px;
+    }
+    .services .services-section-2 .service-2 {
+        margin: 100px 0px;
+    }
+
+}
+@media (max-width: 810px) {
+    .services .services-section-1 .services-content, .services .services-section-1 .services-bus {
+      flex: 100%;
+    }
+    .services .services-section-3 {
+        flex-direction: column;
+      }
+}

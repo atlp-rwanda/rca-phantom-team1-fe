@@ -1,0 +1,20 @@
+{
+  "name": "Phantom App",
+  "version": 1,
+  "builds": [
+    {
+      "src": "vite.config.js",
+      "use": "@vercel/static-build",
+      "config": {}
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "API_URL": "https://api.example.com"
+  }
+}
