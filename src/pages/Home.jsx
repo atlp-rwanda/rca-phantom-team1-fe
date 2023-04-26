@@ -1,11 +1,11 @@
-function Home() {
+import {Navbar, Header, Services} from "../components"
 
+const Home = () => {
   return (
     <div className="Home">
-      <h1>Welcome To Phantom</h1>
-      <div className="card">
-        Frontend
-      </div>
+      <Navbar/>
+      <Header/>
+      <Services/>
     </div>
   )
 }
