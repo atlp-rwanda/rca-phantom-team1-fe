@@ -19,12 +19,6 @@ function App() {
           <Route path='/password-reset' element={<PasswordReset />} />
         </Routes>
       </Router>
-
-      {/* <div>
-        <h1>Counter: {count}</h1>
-        <button onClick={() => dispatch(increment())}>Increment</button>
-        <button onClick={() => dispatch(decrement())}>Decrement</button>
-      </div> */}
     </>
   )
 }
