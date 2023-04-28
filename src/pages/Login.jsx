@@ -4,6 +4,7 @@ import PhantomLogo from '../assets/images/Logo-real.svg'
 import TextInput from "../components/form/TextInput";
 import ActionButton from "../components/form/SubmitButton";
 import FormLink from "../components/form/FormLink";
+import SwitchButton from "../components/form/SwitchButton";
 
 const Login = () => {
   return (
@@ -27,8 +28,8 @@ const Login = () => {
             <form action="" className="mt-8">
               <div className="flex justify-between items-center">
                 <div className="flex">
-                  <Button label="Log In" active={true} className="mr-2 m-8" />
-                  <Button label="Register" active={false} className="m-8"/>
+                  <SwitchButton label="Log In" active={true} className="mr-2 m-8" />
+                  <SwitchButton label="Register" active={false} className="m-8"/>
                 </div>
               </div>
               <TextInput type={'email'} placeholder={"Email address"} className="w-80" />
@@ -45,11 +46,6 @@ const Login = () => {
   );
 };
 
-const Button = ({ label, active, className }) => {
-  const buttonStyle = active
-    ? "text-white underline"
-    : "text-gray-500 underline hover:text-gray-700";
-  return <button className={`${buttonStyle} ${className}`}>{label}</button>;
-};
+
 
 export default Login;
