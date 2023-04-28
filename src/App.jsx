@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import { useSelector, useDispatch } from 'react-redux'
 import { increment, decrement } from './store'
 import PasswordReset from './pages/PasswordReset'
+import Login from './pages/Login' 
 
 function App() {
   const count = useSelector((state) => state.count)
@@ -17,6 +18,7 @@ function App() {
           {/* auth routes */}
           <Route path='/' element={<Home />} />
           <Route path='/password-reset' element={<PasswordReset />} />
+          <Route path='/sign-in' element={<Login />} />
         </Routes>
       </Router>
     </>
