@@ -1,7 +1,7 @@
 import React from 'react'
 import { footerLogo } from '../../assets/images'
 import './footer.scss'
-import {Button} from '../index'
+import {Button} from '../'
 
 function Footer() {
   return (
