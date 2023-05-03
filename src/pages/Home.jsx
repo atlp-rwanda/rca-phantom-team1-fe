@@ -1,5 +1,4 @@
-import {Navbar, Header, Services} from "../components"
-import Footer from '../components/footer/index'
+import {Navbar, Header, Services, Footer} from "../components"
 
 const Home = () => {
   return (
