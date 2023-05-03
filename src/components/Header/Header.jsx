@@ -1,7 +1,7 @@
 import React from "react";
 import './header.scss'
 import { headerbus } from "../../assets/images";
-import { Button } from "../ui";
+import { Button } from "../";
 
 const Header = () => {
     return (

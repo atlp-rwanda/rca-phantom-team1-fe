@@ -7,9 +7,6 @@ import { increment, decrement } from './store'
 import PasswordReset from './pages/PasswordReset'
 
 function App() {
-  const count = useSelector((state) => state.count)
-  const dispatch = useDispatch()
-
   return (
     <>
       <Router>

@@ -7,7 +7,14 @@
     box-sizing: border-box;
     text-align: center;
 }
-
+.services h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    color: $black;
+}
 /*
 SECTION 1
 */
@@ -121,6 +128,9 @@ SECTION 2
 }
 .services .services-section-2 img {
     margin-top: 40px;
+}
+.services .services-section-2 .service-2 img {
+    margin-left: 70px;
 }
 .services .services-section-2 a {
     color: $second-color;

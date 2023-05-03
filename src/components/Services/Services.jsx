@@ -1,7 +1,7 @@
 import React from "react";
 import './services.scss'
 import { trackbus1, trackbus2, service1, service2, service3 } from "../../assets/images";
-import { Button } from "../ui";
+import { Button } from "../";
 
 const Services = () => {
     return (
