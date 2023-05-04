@@ -40,7 +40,10 @@ const Login = () => {
       console.log(error);
       if(error.response.status === 400){
         toast.error(error.response.data.error);
-      }else{
+      }else if(error.response.status === 500){
+        toast.error("Internal Server Error: Contact the administrator");
+      }
+      else{
         toast.error(error.response.data.message);
       }
     }
