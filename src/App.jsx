@@ -10,9 +10,6 @@ import Login from './pages/Login'
 import Dashboard from './pages/DashBoard'
 
 function App() {
-  const count = useSelector((state) => state.count)
-  const dispatch = useDispatch()
-
   return (
     <>
       <Router>

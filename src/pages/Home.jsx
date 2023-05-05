@@ -1,4 +1,4 @@
-import {Navbar, Header, Services} from "../components"
+import {Navbar, Header, Services, Footer, Contact} from "../components"
 
 const Home = () => {
   return (
@@ -6,6 +6,8 @@ const Home = () => {
       <Navbar/>
       <Header/>
       <Services/>
+      <Contact/>
+      <Footer/>
     </div>
   )
 }
