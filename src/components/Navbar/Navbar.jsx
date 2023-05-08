@@ -1,8 +1,10 @@
 import React from "react";
 import './navbar.scss'
 import {logo} from "../../assets/images.jsx"
+import { Link, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
+    const navigate = useNavigate()
     return(
         <nav>
       <div className="logo">
@@ -29,7 +31,7 @@ const Navbar = () => {
         <li>
           <div className="login">
             <button className="login-btn">Login</button>
-            <button className="signup-btn">Sign Up</button>
+            <button className="signup-btn" onClick={() => navigate('/signup')}>Sign Up</button>
           </div>
         </li>
       </ul>

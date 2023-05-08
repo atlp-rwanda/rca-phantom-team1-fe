@@ -1,0 +1,123 @@
+@use "../../assets/scss/" as *;
+
+.layout {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.layout .layout-content{
+    flex: 43%;
+    height: 100%;
+    padding-top: 60px;
+    color: $black;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.layout .layout-content div{
+    width: 300px; 
+}
+.layout .layout-content div p{
+    margin: 30px 0px;
+}
+.layout .layout-content h1 {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 27px;
+    color: $main-color;
+}
+.layout .layout-content p {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 200;
+    font-size: 17px;
+    line-height: 20px;
+    color: $main-color;
+}
+.layout .layout-form {
+    flex:57%;
+    height: 100%;
+    background-color: $main-color;
+    color: $txt-color;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 6% 15%;
+    color: rgb(255, 147, 147);
+}
+.layout .layout-form img{
+    width: 126px;
+    height: 57px;
+}
+.layout .layout-form ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 18px 0px;
+}
+.layout .layout-form ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.56);
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 5px 0;
+    color: $white;
+}
+.layout .layout-form ul .active, .layout .layout-form ul li:hover{
+    border-bottom: 2px solid $white;
+    font-weight: 500;
+}
+.layout .layout-form ul li:nth-child(2){
+    margin-left: 35px
+}
+
+.layout .layout-form input{
+    height: 38px;
+    border-radius: 4px;
+    padding: 5px;
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 7px 0px;
+}
+
+.layout .layout-form button{
+    width: 114px;
+    height: 33px;
+    color: $main-color;
+    background-color: $white;
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 30px 0px;
+}
+
+.layout .layout-form .error-message {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgb(162, 25, 25);
+    // opacity: 0.8;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+    .layout .layout-content {
+      display: none;
+    }
+}
