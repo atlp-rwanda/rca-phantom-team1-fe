@@ -6,7 +6,7 @@ const ActionButton = ({ label, onClick, className, disabled, type, children }) =
     <button
       type={type}
       onClick={onClick}
-      className={` py-3 bg-white rounded w-2/3 md:w-1/2 textcolor-blue font-bold hover:scale-x-105 transition-all ${className}`}
+      className={` py-3 bg-white rounded textcolor-blue font-bold hover:scale-x-105 transition-all ${className}`}
       disabled={disabled}
     >
       {label}
