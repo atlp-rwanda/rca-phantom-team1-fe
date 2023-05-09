@@ -16,7 +16,7 @@ const SignupLayout = props => {
             <div className="layout-form">
                 <Link to='/'><img src={whiteLogo} alt="logo"/></Link>
                 <ul>
-                    <li className={props.action != "Register"? "active":""}><Link to='/signin'>Login</Link></li>
+                    <li className={props.action != "Register"? "active":""}><Link to='/sign-in'>Login</Link></li>
                     <li className={props.action == "Register"? "active":""}><Link to='/signup'>Register</Link></li>
                 </ul>
                 {props.children}

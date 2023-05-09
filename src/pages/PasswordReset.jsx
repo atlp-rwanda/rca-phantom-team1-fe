@@ -28,7 +28,7 @@ const PasswordReset = () => {
 
                         <form action="" className="mt-8">
                             <TextInput type={'email'} placeholder={"Email address"}  />
-                            <ActionButton label={"Send Reset Link"}  className="mt-4" />
+                            <ActionButton label={"Send Reset Link"}  className="mt-4 w-2/3 md:w-1/2"/>
                         </form>
                     </div>
                 </div>

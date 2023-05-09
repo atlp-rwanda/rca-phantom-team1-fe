@@ -30,7 +30,7 @@ const Navbar = () => {
         </li>
         <li>
           <div className="login">
-            <button className="login-btn">Login</button>
+            <button className="login-btn" onClick={() => navigate('/sign-in')}>Login</button>
             <button className="signup-btn" onClick={() => navigate('/signup')}>Sign Up</button>
           </div>
         </li>

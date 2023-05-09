@@ -2,9 +2,9 @@ import React from 'react'
 import './assets/styles/index.css'
 import { Routes, BrowserRouter as Router, Route, Navigate } from 'react-router-dom'
 import {Home, Signup} from './pages'
-import { useSelector, useDispatch } from 'react-redux'
-import { increment, decrement } from './store'
 import PasswordReset from './pages/PasswordReset'
+import Login from './pages/Login' 
+import Dashboard from './pages/DashBoard'
 
 const PrivateRoute = ({children}) => {
   const token = localStorage.getItem('token');
@@ -28,6 +28,8 @@ function App() {
           <Signup/>
           </PrivateRoute>}/>
 
+          <Route path='/sign-in' element={<Login />} />
+          <Route path='/dashboard' element={<Dashboard />} />
         </Routes>
       </Router>
     </>
