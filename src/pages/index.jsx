@@ -1,3 +1,7 @@
 import Home from "./Home";
+import Signup from "./Signup";
 
-export default { Home }
+export { 
+    Home,
+    Signup
+}

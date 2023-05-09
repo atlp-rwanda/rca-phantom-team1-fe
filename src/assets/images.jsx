@@ -9,6 +9,8 @@ import footerLogo from './images/logo-footer.png'
 import address1 from './images/address-1.png'
 import address2 from './images/address-2.png'
 import address3 from './images/address-3.png'
+import passenger from './images/passenger-img.png'
+import whiteLogo from './images/white-logo.png'
 export {
     logo,
     headerbus,
@@ -20,5 +22,7 @@ export {
     footerLogo,
     address1,
     address2,
-    address3
+    address3,
+    passenger,
+    whiteLogo
 }

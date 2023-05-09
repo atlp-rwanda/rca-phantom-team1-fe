@@ -1,16 +1,10 @@
 import React from "react";
 import './navbar.scss'
 import {logo} from "../../assets/images.jsx"
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
-
-    const navigate = useNavigate();
-
-    function handleClick() {
-      navigate("/sign-in");
-    }
-
+    const navigate = useNavigate()
     return(
         <nav>
       <div className="logo">
@@ -36,8 +30,8 @@ const Navbar = () => {
         </li>
         <li>
           <div className="login">
-            <button className="login-btn" onClick={handleClick}>Login</button>
-            <button className="signup-btn">Sign Up</button>
+            <button className="login-btn" onClick={() => navigate('/sign-in')}>Login</button>
+            <button className="signup-btn" onClick={() => navigate('/signup')}>Sign Up</button>
           </div>
         </li>
       </ul>
